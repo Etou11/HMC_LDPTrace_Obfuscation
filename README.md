@@ -9,14 +9,14 @@ The main program is located in the **Heat Map Confusion** folder. It contains th
 ### Folder Structure:
 
 - **data**:
-  - **profiles_pickl**: Contains profiles in Pickle format.
+  - **profiles_pickl_epsilon_1**: Contains profiles with epsilon 1 in Pickle format.
+  - **profiles_pickl_epsilon_2**: Contains profiles with epsilon 2 in Pickle format.
+  - **profiles_pickl_epsilon_1_5**: Contains profiles with epsilon 1.5 in Pickle format.
   - **profiles_txt**: Contains profiles in text format.
 - **notebooks**:
   - **HMC.ipynb**: Jupyter Notebook that includes the implementation and execution of the HMC process.
 - **output**:
-  - **AP Scenario HMC**: Outputs of the AP scenario using HMC.
-  - **AP Scenario NOBF**: Outputs of the AP scenario without HMC.
-  - **Archive**: Archived results and reports.
+  - **AP-Attack**: Contains outputs of the AP scenario for different epsilon values (Epsilon1, Epsilon2, Epsilon15).
 - **src**:
   - **ap_attack.py**: Script for executing AP attacks.
   - **data_loader.py**: Loads and processes the required data.
@@ -24,23 +24,23 @@ The main program is located in the **Heat Map Confusion** folder. It contains th
   - **heatmap.py**: Contains functions for creating and modifying heatmaps.
   - **helper.py**: Helper functions for various tasks.
   - **hmc.py**: The main implementation of the Heat Map Confusion (HMC) algorithm.
-  - **main.py**: Possibly the main script to run the program.
+  - **main.py**: The main script to run the program.
   - **mobility_trace_reconstruction.py**: Script for reconstructing mobility traces, currently still in progress.
-  - **requirements.txt**: Lists the required Python libraries.
   - **split_dataframe.py**: Helper functions for splitting DataFrames.
-
-### Additional Folders:
-
-- **AP Attack**: Contains notebooks and code fragments for conducting attacks on Access Points.
-- **Daten**: This folder contains relevant datasets.
-- **Heat Map**: Includes notebooks for creating and modifying heat maps.
-- **Helper**: Contains scripts to assist with CSV and Pickle file formats.
-- **Pickle LDPTrace**: Contains files for processing LDP-Trace data in Pickle format.
-- **POI-Attack**: Contains code and notebooks focused on attacks on Points of Interest (POIs).
+- **.gitignore**: Specifies files and directories to ignore in version control.
+- **README.md**: The file you are currently reading.
+- **requirements.txt**: Lists the required Python libraries.
 
 ## Functionality
 
 The **HMC** program (Heat Map Confusion) is fully functional and allows for the creation and modification of heat maps as well as the execution of AP-Attacks. The Mobility Trace Reconstruction feature is still under development.
+
+## Installation
+
+To install the required dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
 
 ## Author
 
